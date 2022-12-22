@@ -6,101 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="Pictures/Fonts">
-    <link rel="stylesheet" href="js/script.js">
+    <script src="js/script.js"></script>
 
     <title> FLor de Santa Apolonia </title>
 
     <script src="https://kit.fontawesome.com/d132031da6.js"
         crossorigin="anonymous"> </script>
-        <style>
-          body {font-family: Arial, Helvetica, sans-serif;}
-          
-          #myImg {
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-          }
-          
-          #myImg:hover {opacity: 0.7;}
-          
-          /* The Modal (background) */
-          .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            padding-top: 100px; /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-          }
-          
-          /* Modal Content (image) */
-          .modal-content {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-          }
-          
-          /* Caption of Modal Image */
-          #caption {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-            text-align: center;
-            color: #ccc;
-            padding: 10px 0;
-            height: 150px;
-          }
-          
-          /* Add Animation */
-          .modal-content, #caption {  
-            -webkit-animation-name: zoom;
-            -webkit-animation-duration: 0.6s;
-            animation-name: zoom;
-            animation-duration: 0.6s;
-          }
-          
-          @-webkit-keyframes zoom {
-            from {-webkit-transform:scale(0)} 
-            to {-webkit-transform:scale(1)}
-          }
-          
-          @keyframes zoom {
-            from {transform:scale(0)} 
-            to {transform:scale(1)}
-          }
-          
-          /* The Close Button */
-          .close {
-            position: absolute;
-            top: 15px;
-            right: 35px;
-            color: #f1f1f1;
-            font-size: 40px;
-            font-weight: bold;
-            transition: 0.3s;
-          }
-          
-          .close:hover,
-          .close:focus {
-            color: #bbb;
-            text-decoration: none;
-            cursor: pointer;
-          }
-          
-          /* 100% Image Width on Smaller Screens */
-          @media only screen and (max-width: 700px){
-            .modal-content {
-              width: 100%;
-            }
-          }
-          </style>
+       
        
 
 </head>
@@ -132,89 +44,155 @@
 
     </div>
 
-    <div class="modal01">
-       <img id="myImg" src="Pictures/pao-bico.JPG" alt="Snow" style="width:100%;max-width:300px">
-
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption"></div>
+    <h3>Pães</h3>
+    <div class="row">
+      <div class="column">
+        <img src="Pictures/pao-bico.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
       </div>
-       
-      <img id="myImg" src="Pictures/pao-avo.png" alt="Snow" style="width:100%;max-width:300px">
-
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img02">
-        <div id="caption"></div>
+      <div class="column">
+        <img src="Pictures/pao-avo.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
       </div>
-       
-      <img id="myImg" src="Pictures/pao-centeio.png" alt="Snow" style="width:100%;max-width:300px">
-
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img03">
-        <div id="caption"></div>
+      <div class="column">
+        <img src="Pictures/mistura-padinha.JPG" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
       </div>
-       
-      <img id="myImg" src="Pictures/mistura-padinha.JPG" alt="Snow" style="width:100%;max-width:300px">
-
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img04">
-        <div id="caption"></div>
-      </div>
-      <img id="myImg" src="Pictures/pao-mistura.JPG" alt="Snow" style="width:100%;max-width:300px">
-
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img05">
-        <div id="caption"></div>
-      </div>
-      <img id="myImg" src="Pictures/pao-mistura-bola.JPG" alt="Snow" style="width:100%;max-width:300px">
-
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img06">
-        <div id="caption"></div>
-      </div>
-      <img id="myImg" src="Pictures/pao-cereais.png" alt="Snow" style="width:100%;max-width:300px">
-
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img07">
-        <div id="caption"></div>
-      </div>
-      <img id="myImg" src="Pictures/pao-cementes-cesamo.JPG" alt="Snow" style="width:100%;max-width:300px">
-
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img08">
-        <div id="caption"></div>
-      </div>
-      <img id="myImg" src="Pictures/pao-girassol.png" alt="Snow" style="width:100%;max-width:300px">
-
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img09">
-        <div id="caption"></div>
-      </div>
-      <img id="myImg" src="Pictures/pao-mistura-grande..png" alt="Snow" style="width:100%;max-width:300px">
-
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img10">
-        <div id="caption"></div>
-      </div>
-      <img id="myImg" src="Pictures/broa.png" alt="Snow" style="width:100%;max-width:300px">
-
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img11">
-        <div id="caption"></div>
-      </div>
-
     </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="Pictures/pao-mistura-bola.JPG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="Pictures/pao-mistura.JPG" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="Pictures/pao-cereais.png" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="Pictures/pao-cementes-cesamo.JPG" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="Pictures/pao-girassol.png" id="correcao" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="Pictures/pao-integral.png" id="correcao" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="Pictures/pao-mistura-grande..png" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="Pictures/broa.png" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+      </div>
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 11</div>
+          <img src="Pictures/pao-bico.JPG" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 11</div>
+          <img src="Pictures/pao-avo.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 11</div>
+          <img src="Pictures/mistura-padinha.JPG" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 11</div>
+          <img src="Pictures/pao-mistura-bola.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 11</div>
+          <img src="Pictures/pao-mistura.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 11</div>
+          <img src="Pictures/pao-cereais.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 11</div>
+          <img src="Pictures/pao-cementes-cesamo.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 11</div>
+          <img src="Pictures/pao-girassol.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">9 / 11</div>
+          <img src="Pictures/pao-integral.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">10 /11</div>
+          <img src="Pictures/pao-mistura-grande..png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">11 / 11</div>
+          <img src="Pictures/broa.png" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="column">
+          <img class="demo cursor" src="Pictures/pao-bico.JPG" style="width:100%" onclick="currentSlide(1)" alt="Pão de bico">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/pao-avo.png" style="width:100%" onclick="currentSlide(2)" alt="Pão d'agua/Ávo">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/mistura-padinha.JPG" style="width:100%" onclick="currentSlide(3)" alt="Mistura Padinha">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/pao-mistura-bola.JPG" style="width:100%" onclick="currentSlide(4)" alt="Pão de mistura bola">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/pao-mistura.JPG" style="width:100%" onclick="currentSlide(5)" alt="Pão de mistura comprido">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/pao-cereais.png" style="width:100%" onclick="currentSlide(6)" alt="Pão de cereais">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/pao-cementes-cesamo.JPG" style="width:100%" onclick="currentSlide(7)" alt="Pão de cementes cesamo">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/pao-girassol.png" style="width:100%" onclick="currentSlide(8)" alt="Pão de girassol">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/pao-integral.png" style="width:100%" onclick="currentSlide(9)" alt="Pão integrtal">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/pao-mistura-grande..png" style="width:100%" onclick="currentSlide(10)" alt="Pão de mistura grande">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/broa.png" style="width:100%" onclick="currentSlide(11)" alt="Broa de milho">
+        </div>
+      </div>
+    </div>
+    
 
     <br>
     <br>
@@ -290,26 +268,7 @@
     </footer>
     
     <script>
-      // Get the modal
-      var modal = document.getElementById("myModal");
-      
-      // Get the image and insert it inside the modal - use its "alt" text as a caption
-      var img = document.getElementById("myImg");
-      var modalImg = document.getElementById("img01");
-      var captionText = document.getElementById("caption");
-      img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-      }
-      
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-      
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() { 
-        modal.style.display = "none";
-      }
+    
       </script>
 
 </body>

@@ -1,0 +1,41 @@
+<rss version="2.0">
+		
+	<channel>
+	
+		<generator> RSS Builder </generator>
+		<title> Infowester </title>
+		<link> https://www.infowester.com </link>
+		<description> Conhecimento tecnológico ao seu alcance </description>
+		<language> pt-br </language>
+		<webmaster> contato@infowester.com </webMaster>  
+		
+		<item>
+		<title> Tipos de telas: LCD, Plasma, OLED e AMOLED </title>
+		<pubDate> Fri, 23 Sep 2011 16:52:19 -0300 </pubDate>		
+		<description>
+			Veja neste texto as características das telas LCD, 
+			Plasma, OLED e AMOLED. Conheça também as 
+			diferenças entre estas tecnologias.
+		</description>
+		<link> https://www.infowester.com/lcd_plasma_oled.php </link>
+		<author> contato@infowester.com </author>
+		<category> Hardware </category>
+		</item>	
+		
+		<item>
+		<title> Quinze dicas para o Word 2010 </title>
+		<pubDate> Mon, 8 Aug 2011 19:37:28 GMT </pubDate>		
+		<description>
+			o Infowester apresenta neste link uma seleção 
+			de quinze dicas para que você possa aproveitar todo 
+			o potencial do Microsoft Word 2010!
+		</description>
+		<link> https://www.infowester.com/dicasword2010.php </link>
+		<author> contato@infowester.com </author>
+		<category> Dicas </category>
+		</item>	
+
+	</channel>
+	
+	</rss>
+	
