@@ -85,66 +85,78 @@
     </main>
 
     <div class="box">
-       <form action="">
-        <fieldset>
+       <form class="box-1">
+        
             <h3 id="h3">Dados</h3>
             <br>
             <div class="inputBox">
-                <input type="text" name="nome" id="nome" class="inputUser" required>
-                <label for="nome" id="nomE">Nome</label>
+                <label></label>
+                <input type="text" placeholder="Nome" name="nome" required/>
+            
             </div>
             <div class="inputBox">
-                <input type="text" name="nome" id="nome" class="inputUser" required>
-                <label for="nome" id="nomE">Apelido</label>
+                <label></label>
+                <input type="text" placeholder="Nome" name="Apelido" required/>
+            
             </div>
             <div class="inputBox">
-                <input type="tel" name="telemovel" id="telemovel" class="inputUser" required>
-                <label for="telemovel" id="nomE">Telemovel</label>
+                <input type="tel" placeholder="Telemovel" required>
+                <label></label>
             </div>
 
             <h3 id="h3">Pedido de Orçamento</h3>
+            <br>
+            <br>
 
-            <select name="select" class="select">
-                <option value="amarelo" id="seletor">Pastelaria</option>   
-                <option value="azul" id="seletor">Padaria</option>   
-                <option value="verde" id="seletor">Pequeno Almoço</option>   
+            <p id="h4">Tipo de pagina Web:<p></p>
+            <select onchange="carregar(this.value)" name="percentagem">
+                <option value="5%" id="seletor">5%</option>   
+                <option value="10%" id="seletor">10%</option>   
+                <option value="20%" id="seletor">20%</option>   
             </select>
 
+            <p id="h4">Prazo em meses:<p></p>
             <div class="inputBox">
-                <input type="number" name="number" id="number" class="inputUser" required>
-                <label for="number">Número</label>
+                <input type="number" placeholder="Número" name="number" required>
+                <label></label>
             </div>
 
-            <h4>Marque os separadores desejados</h4>
-
-            <div class="row">
+            <p id="h4">Marque os separadores desejados<p>
+                <br>
+            <div class="row" id="rowSelection">
             <input type="checkbox" id="check" name="check" value="text"> Quem Somos
-            <br>
-            <input type="checkbox" id="check" name="check" value="text"> Onde Estamos
-            <br>
-            </div>
-            <div class="row">
+           <br>
+            <input type="checkbox" id="check-1" name="check" value="text"> Onde Estamos
+           <br>
             <input type="checkbox" id="check" name="check" value="text"> Galeria de Fotografias
             <br>
-            <input type="checkbox" id="check" name="check" value="text"> eCommerce
+            <input type="checkbox" id="check-1" name="check" value="text"> eCommerce
             <br>
-            </div>
-            <div class="row">
             <input type="checkbox" id="check" name="check" value="text"> Gestão interna
             <br>
-            <input type="checkbox" id="check" name="check" value="text"> Notícias
+            <input type="checkbox" id="check-1" name="check" value="text"> Notícias
             <br>
-            </div>
             <input type="checkbox" id="check" name="check" value="text"> Redes sociais
             <br>
+            </div>
+
+
+            <h3 id="h3">Orçamento estimado</h3>
+            <p id="subP">(É um valor meramente indicativo, pode sofrer alterações</p>
             
-        </fieldset>
+            <div id="resultado">
+
+            <input type="value" id="javascript" name="fav_language">
+            <label></label>
+            </div>
+        
 
 
-       </form>
+        </form>
 
     
     </div>
+
 
     <br>
     <br>
