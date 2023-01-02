@@ -60,3 +60,14 @@ objeto_json.items[i].description + "<br/>";
           }
       });
   }
+
+  let check = 400
+
+  function select(seletor) {
+
+    opt = newOption('Quem somos', 'Onde estamos');
+
+    console.log(select);
+
+  }
+    

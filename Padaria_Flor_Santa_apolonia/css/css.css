@@ -24,10 +24,10 @@ header{
 }
 header{
     position: fixed;
-    background-color: #473804;
-    width: 100%;
+    background-color: #0e010180;
+    width: 84vw;
     overflow: hidden;
-
+    margin-top: 25px;
 }
 #logo{
     width: 120px;
@@ -302,6 +302,8 @@ td{
 }
 .row > .column {
     padding: 0 8px;
+    margin-left: 40px;
+    margin-top: 50px;
   }
   
   .row:after {
@@ -311,8 +313,7 @@ td{
   }
 .row{
     background-color: #fff;
-    padding: 20px;
-    
+    padding: 5px;
 }
 h3{
     font-size: 7vw;
@@ -416,7 +417,7 @@ h3{
     transition: 0.3s;
   }
   .hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(226, 10, 10, 0.295), 0 6px 20px 0 rgba(167, 6, 6, 0.2);
   }
   .select{
     block-size: 40px;
@@ -473,4 +474,13 @@ h3{
     height: auto;
     position: relative;
     border: 1px solid cadetblue;
+}
+.Pvitrine{
+    color: #0b2231;
+    text-align: center;
+    font-size: 26px;
+    padding-top: 26px;
+    text-decoration: underline;
+    font-family: 'Doses', Times, serif;
+    
 }
