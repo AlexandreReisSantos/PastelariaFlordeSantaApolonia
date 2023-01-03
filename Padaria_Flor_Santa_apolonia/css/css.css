@@ -25,7 +25,7 @@ header{
 header{
     position: fixed;
     background-color: #0e010180;
-    width: 84vw;
+    width: 85.4vw;
     overflow: hidden;
     margin-top: 25px;
 }
@@ -107,7 +107,6 @@ main{
 }
 .navegacao{
     font-size: 23px;
-    margin-right: 125px;
     font-family: 'Nunito';
 }
 .bolo_background_1{
@@ -133,9 +132,11 @@ main{
 }
 .titulo{
     text-align: center;
+    font-size: 3vw;
 }
 .descricao{
     margin-left: 30%;
+    font-size: 20px;
 }
 h2{
     font-size: 50px;
