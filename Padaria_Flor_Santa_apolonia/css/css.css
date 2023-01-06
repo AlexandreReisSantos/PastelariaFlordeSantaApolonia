@@ -5,7 +5,7 @@
 body{
     margin-top: 0;
     box-sizing: border-box;
-    background-color: #A07349;
+    background-color: #db6923a7;
     color: #fff;
     font-family: 'mavenpro';
     max-width: 1200px;
@@ -25,14 +25,17 @@ header{
     position: fixed;
     background-color: #0e010180;
     width: 85.4vw;
-    margin-top: 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 80px;
 }
 #logo{
-    width: 120px;
-    height: 100px;
-    border-radius: 10px;
+    width:90px;
+    height:77px;
+    border-radius: 30px;
     display: block;
     padding: 14px 16px;
+    padding-bottom: 18px;
 }
 .bolo_background{
     margin-left: 230px;
@@ -105,7 +108,7 @@ main{
 }
 .navegacao ul{
     list-style-type: none;
-    font-size: 23px;
+    font-size: 20px;
     padding: 0;
     font-family: 'Nunito';
 
@@ -208,8 +211,8 @@ form input[type-submit] {
     
 }
 .caixa-1{
-    font-size: 24px;
-    padding-top: 200px;
+    font-size: 20px;
+    padding-top: 140px;
 }
 .socials{
     list-style: none;
@@ -337,10 +340,12 @@ td{
     padding: 5px;
 }
 h3{
-    font-size: 7vw;
+    font-size: 4vw;
     color: #fcfbf88e;
     font-family: 'Doses';
     text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
   .column {
     float: left;
@@ -451,7 +456,7 @@ h3{
   #h3{
     text-align: left;
     padding-left: 40px;
-    font-size: 38px;
+    font-size: 28px;
   }
   #nome{
     margin-left: 8vw;

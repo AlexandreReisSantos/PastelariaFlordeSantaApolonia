@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="Pictures/Fonts">
+    <script src="js/script.js"></script>
+
+    <title> FLor de Santa Apolonia </title>
+
+    <script src="https://kit.fontawesome.com/d132031da6.js"
+        crossorigin="anonymous"> </script>
+       
+       
+
+</head>
+<body>
+    
+    <header>
+
+        <div id="title">
+            <img src="Pictures/flor_santaapolonia.png" id="logo" alt="logo-padaria">
+        </div>
+        
+        <nav class="navegacao">
+            <ul>
+
+               <li><a href="Home.html">Home</a></li>
+               <li><a href="Serviços.html">Serviços</a>
+                  <ul>
+                    <li><a href="padaria.html">Padaria</a></li>
+                    <li><a href="pastelaria.html">Pastelaria</a></li>
+                    <li><a href="almoços.html">Almoços</a></li>
+                  </ul>
+                </li>
+               <li><a href="Quem_Somos.html">Quem Somos</a></li>
+               <li><a href="Contacto.html">Contactos</a></li>
+
+            </ul>
+        </nav>
+        
+    </header>
+
+    <div class="caixa-1">
+
+      <h1>Padaria e Pastelaria<br>
+          Flor de Santa Apolonia</h1>
+
+    </div>
+
+    <h3>Pães</h3>
+    <div class="row">
+      <div class="column">
+        <img src="Pictures/pao-bico.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      <p class="Pvitrine">Pão de bico</p>
+      </div>
+
+      <div class="column">
+        <img src="Pictures/pao-avo.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        <p class="Pvitrine">Pão d'água/Pão da avó</p>
+      </div>
+
+      <div class="column">
+        <img src="Pictures/mistura-padinha.JPG" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        <p class="Pvitrine">Mistura padinha </p>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="Pictures/pao-mistura-bola.JPG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        <p class="Pvitrine">Mistura bola</p>
+      </div>
+     
+      <div class="column">
+        <img src="Pictures/pao-mistura.JPG" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        <p class="Pvitrine">Mistura comprido</p>
+      </div>
+      
+      <div class="column">
+        <img src="Pictures/pao-cereais.png" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+        <p class="Pvitrine">Pão de cereais</p>
+      </div>
+   
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="Pictures/pao-cementes-cesamo.JPG" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+        <p class="Pvitrine">Pão de cementes de cesamo</p>
+      </div>
+     
+      <div class="column">
+        <img src="Pictures/pao-girassol.png" id="correcao" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+        <p class="Pvitrine">Pão de girassol</p>
+      </div>
+      
+      <div class="column">
+        <img src="Pictures/pao-integral.png" id="correcao" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+        <p class="Pvitrine">Pão integral</p>
+      </div>
+   
+    </div>
+
+    <div class="row">
+      <div class="column">
+       
+        <img src="Pictures/pao-mistura-grande..png" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+        <p class="Pvitrine">Pão de mistura grande</p>
+      </div>
+      <div class="column">
+        <img src="Pictures/broa.png" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+        <p class="Pvitrine">Broa</p>
+      </div>
+   
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 11</div>
+          <img src="Pictures/pao-bico.JPG" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 11</div>
+          <img src="Pictures/pao-avo.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 11</div>
+          <img src="Pictures/mistura-padinha.JPG" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 11</div>
+          <img src="Pictures/pao-mistura-bola.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 11</div>
+          <img src="Pictures/pao-mistura.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 11</div>
+          <img src="Pictures/pao-cereais.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 11</div>
+          <img src="Pictures/pao-cementes-cesamo.JPG" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 11</div>
+          <img src="Pictures/pao-girassol.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">9 / 11</div>
+          <img src="Pictures/pao-integral.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">10 /11</div>
+          <img src="Pictures/pao-mistura-grande..png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">11 / 11</div>
+          <img src="Pictures/broa.png" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="column">
+          <img class="demo cursor" src="Pictures/pao-bico.JPG" style="width:100%" onclick="currentSlide(1)" alt="Pão de bico">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/pao-avo.png" style="width:100%" onclick="currentSlide(2)" alt="Pão d'agua/Ávo">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/mistura-padinha.JPG" style="width:100%" onclick="currentSlide(3)" alt="Mistura Padinha">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/pao-mistura-bola.JPG" style="width:100%" onclick="currentSlide(4)" alt="Pão de mistura bola">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/pao-mistura.JPG" style="width:100%" onclick="currentSlide(5)" alt="Pão de mistura comprido">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/pao-cereais.png" style="width:100%" onclick="currentSlide(6)" alt="Pão de cereais">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/pao-cementes-cesamo.JPG" style="width:100%" onclick="currentSlide(7)" alt="Pão de cementes cesamo">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/pao-girassol.png" style="width:100%" onclick="currentSlide(8)" alt="Pão de girassol">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/pao-integral.png" style="width:100%" onclick="currentSlide(9)" alt="Pão integrtal">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/pao-mistura-grande..png" style="width:100%" onclick="currentSlide(10)" alt="Pão de mistura grande">
+          
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Pictures/broa.png" style="width:100%" onclick="currentSlide(11)" alt="Broa de milho">
+        </div>
+      </div>
+    </div>
+  
+    <div>
+
+        <h2 class="table-sopa"> Sopa do Dia</h2>
+    <table class="table">
+        <tr>
+            <th>Segunda-Feira</th>
+            <th>Terça-Feira</th>
+            <th>Quarta-Feira</th>
+            <th>Quinta-Feira</th>
+            <th>Sexta-Feira</th>
+        </tr>
+
+        <br>
+
+        <tr>
+            <td>Sopa de Legumes</td>
+            <td>Sopa de Feijão Verde</td>
+            <td>Sopa de Caldo Verde</td>
+            <td>Sopa de Peixe</td>
+            <td>Sopa de Legumes com Grãos</td>
+        </tr>
+
+    </table>
+
+    </div>
+
+  </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+
+        <footer>
+
+            <ul class="socials"> 
+
+
+                <li><a href="https://www.facebook.com/flordesantaapolonia/" target="_blank"> <i class="fa fa-facebook-f"></i></a></li>
+
+                <li><a href="https://www.instagram.com/flordesantaapolonia/" target="_blank"> <i class="fab fa-instagram-square"></i></a></li>
+                            
+                <li><a href="https://www.google.com/search?q=flor+de+santa+apolonia&oq=&aqs=chrome
+                    .7.35i39i362l7j69i59i450.279990419j0j15&sourceid=chrome&ie=UTF-8" target="_blank"> 
+                    <i class="fa fa-google-plus"></i></a></li>
+
+            </ul>
+
+            
+                            
+                <p class="bottom-footer"> copyright &copy;2022 by <span>Padaria e Pastelaria Flor de Santa Apolonia</span>
+                </p>
+
+            
+
+    </footer>
+    
+    <script>
+    
+      </script>
+
+</body>
+</html>
