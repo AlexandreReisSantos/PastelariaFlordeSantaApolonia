@@ -17,8 +17,7 @@ body{
     padding-right: 30px;
 }
 header{
-    display: flex;
-    flex-direction: row;
+    display:flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -26,7 +25,6 @@ header{
     position: fixed;
     background-color: #0e010180;
     width: 85.4vw;
-    overflow: hidden;
     margin-top: 25px;
 }
 #logo{
@@ -105,9 +103,31 @@ main{
     flex-direction: row;
     margin-top: 100px;
 }
-.navegacao{
+.navegacao ul{
+    list-style-type: none;
     font-size: 23px;
+    padding: 0;
     font-family: 'Nunito';
+
+}
+.navegacao ul ul{
+    display: none;
+    position: absolute;
+    left: 0;
+}
+.navegacao ul li:hover ul{
+    display: block;
+}
+.navegacao ul ul li a{
+    display:block;
+
+}
+.navegacao ul li{
+    display: inline;
+    position: relative;
+}
+.navegacao ul li a{
+    text-decoration: none;
 }
 .bolo_background_1{
     display: flex;
