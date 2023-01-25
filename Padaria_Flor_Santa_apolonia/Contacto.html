@@ -102,28 +102,35 @@
             </div>
             <div class="inputBox">
                 <label></label>
-                <input type="text" placeholder="Nome" name="Apelido" required/>
+                <input type="text" placeholder="apelido" name="apelido" required/>
             
             </div>
-            <div class="inputBox">
-                <input type="tel" placeholder="Telemovel" required>
+            <div class="inputBox" id="telemovel">
+                <input type="tel" placeholder="telemovel" required>
                 <label></label>
             </div>
 
             <h3 id="h3">Pedido de Orçamento</h3>
+            <select id="drpProduto" onchange="atualiza()">
+                <option value=0 id="seletor0"></option>   
+                <option value=400.00 id="seletor0">Padaria</option>   
+                <option value=400.00 id="seletor0">Pastelaria</option>   
+                <option value=400.00 id="seletor0">Salgados</option>   
+            </select>
             <br>
             <br>
 
             <p id="h4">Tipo de pagina Web:<p></p>
-            <select onchange="carregar(this.value)" name="percentagem">
-                <option value="5%" id="seletor">5%</option>   
-                <option value="10%" id="seletor">10%</option>   
-                <option value="20%" id="seletor">20%</option>   
+            <select id="prazo" onchange="atualiza()" name="percentagem">
+                <option value=0 id="seletor">0%</option>  
+                <option value=5% id="seletor">5%</option>   
+                <option value=10% id="seletor">10%</option>   
+                <option value=20% id="seletor">20%</option>   
             </select>
 
             <p id="h4">Prazo em meses:<p></p>
             <div class="inputBox">
-                <input type="number" placeholder="Número" name="number" required>
+                <input type="number" placeholder="Número" name="number" value="prazo" required>
                 <label></label>
             </div>
 
@@ -131,33 +138,33 @@
 
             <br>
             
-            <div class="row" id="rowSelection" name="check" method="POST" action="">
+            <div class="row" id="checkboxGroup" name="check" method="POST" action="" onchange="atualiza()">
 
-                <input type="checkbox" id="check" name="check-1" value="400$" > Quem Somos
+                <input type="checkbox" id="checkboxes" name="check-1" value=50> Quem Somos
                 <br>
-                <input type="checkbox" id="check-1" name="check-2" value="Onde-Estamos"> Onde Estamos
+                <input type="checkbox" id="checkboxes" name="check-2" value=50> Onde Estamos
                 <br>
-                <input type="checkbox" id="check-2" name="check-3" value="Galeria-de-Fotografias"> Galeria de Fotografias
+                <input type="checkbox" id="checkboxes" name="check-3" value=50> Galeria de Fotografias
                 <br>
-                <input type="checkbox" id="check-3" name="check-4" value="eCommerce"> eCommerce
+                <input type="checkbox" id="checkboxes" name="check-4" value=50> eCommerce
                 <br>
-                <input type="checkbox" id="check-4" name="check-5" value="Gestão-interna"> Gestão interna
+                <input type="checkbox" id="checkboxes" name="check-5" value=50> Gestão interna
                 <br>
-                <input type="checkbox" id="check-5" name="check-6" value="Notícias"> Notícias
+                <input type="checkbox" id="checkboxes" name="check-6" value=50> Notícias
                 <br>
-                <input type="checkbox" id="check-6" name="check-7" value="Redes-sociais"> Redes sociais
+                <input type="checkbox" id="checkboxes" name="check-7" value=50> Redes sociais
                 <br>
 
             </div>
 
 
-            <h3 id="h3" onchange="(resultado)">Orçamento estimado</h3>
+            <h3 id="h3">Orçamento estimado</h3>
             <p id="subP">É um valor meramente indicativo, pode sofrer alterações</p>
             
             <div id="resultado">
 
-            <input type="value" id="javascript" name="fav_language">
-            <label></label>
+            <input type="text" name="valor-orcamento" id="valor-orcamento" readonly="readonly" onchange="atualiza()">
+         
             </div>
         
 
@@ -197,7 +204,31 @@
 
     </footer>
 
-   
+    <script>
+
+        function atualiza() {
+           
+            var drpProduto = document.getElementById("drpProduto").value;
+            var prazo = document.getElementById("prazo").value;
+            var number = document.getElementById("number").value;
+            var checkboxes = document.getElementsByName("checkboxes");
+    
+           
+            var orcamentoFinal = drpProduto;
+    
+            orcamentoFinal += orcamentoFinal * (prazo / 100);
+    
+            orcamentoFinal += number;
+    
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    orcamentoFinal += checkboxes[i].value;
+                }
+            }
+    
+            document.getElementById("valor-orcamento").value = orcamentoFinal;
+        }
+    </script>
 
 </body>
 </html>

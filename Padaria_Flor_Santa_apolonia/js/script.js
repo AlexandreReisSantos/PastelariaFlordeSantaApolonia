@@ -61,13 +61,57 @@ objeto_json.items[i].description + "<br/>";
       });
   }
 
-  let check = 400
+//validar campo do telemovel 
 
-  function select(seletor) {
+function validarTelemovel(){
 
-    opt = newOption('Quem somos', 'Onde estamos');
 
-    console.log(select);
 
-  }
-    
+//validar telemvel como número
+
+var telemovel = document.getElementById('telemovel').value;
+if (isNaN(telemovel)){
+        alert('O número inserido não está correto.');
+        return false;
+}
+
+
+//validar os 9 algarismos
+
+if(!telemovel.startswith(9)){
+    alert('Este campo tem de começar com o número 9.');
+    return false;
+}
+}
+// Orcamento e alterações de Preços
+
+function atualiza(){
+    let preco = 0;
+    preco = document.getElementById('drpProduto').value;
+
+  var drpProduto = document.querySelector("drpProduto");
+  drpProduto.addEventListener("valor-orcamento", function() {
+    alert("mensagem")
+  
+  });
+
+const checkboxGroup = document.getElementById('checkbox-group')
+const checkboxes = checkboxGroup.querySelectorAll('input[type=checkbox]');
+
+for (let i=0; i< checkboxes.length; i++){
+
+    if (checkboxes[i].checked == true){
+        preco += checkboxes[i].value; 
+    }
+}
+
+
+// desconto de 5% por cada mês de prazo
+
+const prazo = document.getElementById('prazo').value;
+preco = preco-(preco*prazo)/100;
+
+document.getElementById('valor-orcamento').value = preco;
+
+console.log(preco);
+}

@@ -5,7 +5,7 @@
 body{
     margin-top: 0;
     box-sizing: border-box;
-    background-color: #db6923a7;
+    background-color: #A6784C;
     color: #fff;
     font-family: 'mavenpro';
     max-width: 1200px;
@@ -101,6 +101,7 @@ h1{
     display: block;
     margin-top: 0;
 }
+
 main{
     display: flex;
     flex-direction: row;
@@ -213,6 +214,12 @@ form input[type-submit] {
 .caixa-1{
     font-size: 20px;
     padding-top: 140px;
+}
+h1{
+    color: white;
+}
+#paragrafo{
+    color: white;
 }
 .socials{
     list-style: none;
@@ -482,7 +489,7 @@ h3{
     font-size: 28px;
     font-weight: bold;
 }
-#rowSelection{
+#checkboxGroup{
     background-color: rgba(3, 3, 71, 0.795);
 }
 #check-1{
