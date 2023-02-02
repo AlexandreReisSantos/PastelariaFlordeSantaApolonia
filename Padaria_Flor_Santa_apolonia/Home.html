@@ -1,156 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/css.css">
-    <link rel="stylesheet" href="Pictures/Fonts">
-    <script src="js/script.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/css.css">
+        <link rel="stylesheet" href="Pictures/Fonts">
 
-    <a href="https://www.infowester.com/index.php">
-        <img src="https://www.infowester.com/index.php" largura="36" altura="14">
-        </a>.
+        <script src="js/script.js"></script>   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <title> FLor de Santa Apolonia </title>
+
+    </head>
+
+    <body>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <header>
 
-    <title> FLor de Santa Apolonia </title>
+            <div id="title">
+                <img src="Pictures/flor_santaapolonia.png" id="logo" alt="logo-padaria">
+            </div>
+            
+            <nav class="navegacao">
+                <ul>
 
-    
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Serviços.html">Serviços</a>
+                        <ul>
+                          <!--  <li><a href="padaria.html">Padaria</a></li> -->
+                            <li><a href="pastelaria.html">Pastelaria</a></li>
+                          <!--  <li><a href="almoços.html">Almoços</a></li> -->
+                        </ul>
+                    </li>
+                    <li><a href="Quem_Somos.html">Quem Somos</a></li>
+                    <li><a href="Contacto.html">Contactos</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        
+        <div class="caixa-1">
 
-</head>
+            <h1>Padaria e Pastelaria<br>
+            Flor de Santa Apolonia</h1>
+                
+            <h2><span>Encomenda de Pães, Doces e Bolos</span></h2>
+            <p id="paragrafo">Faça uma descrição de sua <br>
+            encomenda e deixe seu contacto.</p>
 
-<body>
-   
-    <header>
-
-        <div id="title">
-            <img src="Pictures/flor_santaapolonia.png" id="logo" alt="logo-padaria">
         </div>
-        
-        <nav class="navegacao">
-            <ul>
 
-                <li><a href="Home.html">Home</a></li>
-               <li><a href="Serviços.html">Serviços</a>
-                  <ul>
-                    <li><a href="padaria.html">Padaria</a></li>
-                    <li><a href="pastelaria.html">Pastelaria</a></li>
-                    <li><a href="almoços.html">Almoços</a></li>
-                  </ul>
-                </li>
-               <li><a href="Quem_Somos.html">Quem Somos</a></li>
-               <li><a href="Contacto.html">Contactos</a></li>
-            </ul>
-        </nav>
-        
-    </header>
-    
-    <div class="caixa-1">
-
-        <h1>Padaria e Pastelaria<br>
-        Flor de Santa Apolonia</h1>
+        <main>
             
-        <h2><span>Encomenda de Pães, Doces e Bolos</span></h2>
-        <p id="paragrafo">Faça uma descrição de sua <br>
-        encomenda e deixe seu contacto.</p>
-
-    </div>
-
-    <main>
-        
-        
-        <aside>
-
-            <form>
-                <div>
             
-                    <label></label>
-                    <input type="text" placeholder="Nome" name="nome" required/>
+            <aside>
+
+                <form method="get" action="index.php">
+                    <div>
                 
-                </div>
+                        <label></label>
+                        <input type="text" placeholder="Nome" name="nome" required/>
+                    
+                    </div>
 
-                <div>
-            
-                    <label> </label>
-                    <input type="e-mail" placeholder="E-mail" name="e-mail" required/>
+                    <div>
                 
-                </div>
+                        <label> </label>
+                        <input type="e-mail" placeholder="E-mail" name="e-mail" required/>
+                    
+                    </div>
 
-                <div>
+                    <div>
 
-                    <label> </label>
-                    <textarea rows="8" name="nsg" placeholder="Mensagem" required></textarea>
+                        <label> </label>
+                        <textarea rows="8" name="nsg" placeholder="Mensagem" required></textarea>
 
-                </div>
+                    </div>
 
-                <div id="botao">
+                    <div id="botao">
 
-                    <input type="submit" value="Enviar"/>
-                </div>
+                        <input type="submit" value="Enviar"/>
+                    </div>
+                    
+                    
+
+                </form>
+
+            </aside>
+
+            <article>
+
+                <img src="Pictures/bolo.jpg" class="bolo_background" alt="padaria" width="380px">
                 
+            </article>
+
+        </main>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+
+            <footer>
+
+                <ul class="socials"> 
+
+
+                    <li><a href="https://www.facebook.com/flordesantaapolonia/" target="_blank"> <i class="fa fa-facebook-f"></i></a></li>
+
+                    <li><a href="https://www.instagram.com/flordesantaapolonia/" target="_blank"> <i class="fab fa-instagram-square"></i></a></li>
+                                
+                    <li><a href="https://www.google.com/search?q=flor+de+santa+apolonia&oq=&aqs=chrome
+                        .7.35i39i362l7j69i59i450.279990419j0j15&sourceid=chrome&ie=UTF-8" target="_blank"> 
+                        <i class="fa fa-google-plus"></i></a></li>
+                </ul>
+
+                
+                                
+                    <p class="bottom-footer"> copyright &copy;2022 by <span>Padaria e Pastelaria Flor de Santa Apolonia</span>
+                    </p>
+
+                    
+
                 
 
-            </form>
-
-        </aside>
-
-        <article>
-
-            <img src="Pictures/bolo.jpg" class="bolo_background" alt="padaria" width="380px">
-            
-        </article>
-    </main>
+        </footer>
 
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr>
+        <script type="text/javascript">
 
-        <footer>
+        
 
-            <ul class="socials"> 
+        </script>
+        
 
-
-                <li><a href="https://www.facebook.com/flordesantaapolonia/" target="_blank"> <i class="fa fa-facebook-f"></i></a></li>
-
-                <li><a href="https://www.instagram.com/flordesantaapolonia/" target="_blank"> <i class="fab fa-instagram-square"></i></a></li>
-                            
-                <li><a href="https://www.google.com/search?q=flor+de+santa+apolonia&oq=&aqs=chrome
-                    .7.35i39i362l7j69i59i450.279990419j0j15&sourceid=chrome&ie=UTF-8" target="_blank"> 
-                    <i class="fa fa-google-plus"></i></a></li>
-            </ul>
-
-            
-                            
-                <p class="bottom-footer"> copyright &copy;2022 by <span>Padaria e Pastelaria Flor de Santa Apolonia</span>
-                </p>
-
-                <div id="caixa02">
-                <a href="http://news.google.com/news?ned=us&topic=h&output=rss " onclick="carregar()">Clique para ver as
-                    notícias</a>
-                       
-                            As notícias vão ser carregadas nesta caixa.
-                        </div>
-
-            
-
-    </footer>
-
-
-    <script type="text/javascript">
-
-        function yeah() {
-            alert('seja bem vindo! ao Web site da Pastelaria Flor de Santa Apolonia')
-        }
-        setTimeout(yeah,5000)
-
-       
-
-    </script>
-    
-
-</body>
+    </body>
 </html>
