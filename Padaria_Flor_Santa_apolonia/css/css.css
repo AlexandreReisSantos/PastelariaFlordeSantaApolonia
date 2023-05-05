@@ -13,7 +13,7 @@ body{
     margin-right: 75px;
     padding-top: 15px;
     padding-right: 30px;
-    background-image: url("/Padaria_Flor_Santa_apolonia/Pictures/thufeil-m-X6lFN5OJUQ8-unsplash.jpg");
+    background-image: url("/Padaria_Flor_Santa_apolonia/Pictures/fundo1200.png");
     background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -319,17 +319,12 @@ td{
     padding: 8px;
     text-align: center;
 }
-
-@media screen and (max-width: 965px){
-   
-}
 .row > .column {
     padding: 0 8px;
     margin-left: 40px;
     margin-top: 50px;
-  }
-  
-  .row:after {
+}
+.row:after {
     content: "";
     display: table;
     clear: both;
