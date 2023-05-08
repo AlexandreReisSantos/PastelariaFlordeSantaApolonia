@@ -17,6 +17,66 @@ body{
     background-repeat: no-repeat;
 	background-size: cover;
 }
+@media screen and (max-width: 600px) {
+    .navegacao ul {
+    display: none;
+  }
+
+  .navegacao ul {
+    display: block;
+  }
+
+  /* Estilos para o botão de menu */
+  .navegacao ul {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  /* Estilos para a lista de navegação quando o botão de menu é clicado */
+  .navegacao ul:checked ~ ul {
+    display: block;
+  }
+
+  .navegacao ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .navegacao li {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .navegacao a {
+    display: block;
+    padding: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  #logo{
+    position: relative;
+    left: 0;
+    height: 50px;
+    width: auto;
+    margin-left: 40vw;
+  }
+  .caixa-1{
+    margin-top: 90vw;
+  }
+  .contactos-santa{
+    margin-top: 200vw;
+  }
+}
 header{
     display:flex;
     justify-content: space-between;
@@ -260,13 +320,15 @@ h1{
     margin-left: 29%;
     font-size: 17px;
     color: #ffd667e1;
-
 }
 .caracteristicas{
     margin-top: 108vw;
 }
 .contactos-santa i{
     font-size: 1.6rem;
+}
+.contactos-santa{
+    margin-top: 13vw;
 }
 .card-group, .subtitulo, .card, .card-1, .card-2{
     font-family: 'Nunito';
@@ -465,6 +527,5 @@ h3{
     font-size: 26px;
     padding-top: 26px;
     text-decoration: underline;
-    font-family: 'Doses', Times, serif;
-    
+    font-family: 'Doses', Times, serif;   
 }
