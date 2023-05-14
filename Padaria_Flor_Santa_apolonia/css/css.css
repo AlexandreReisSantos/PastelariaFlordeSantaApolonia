@@ -13,69 +13,9 @@ body{
     margin-right: 75px;
     padding-top: 15px;
     padding-right: 30px;
-    background-image: url("/Padaria_Flor_Santa_apolonia/Pictures/fundo1200.png");
+    background-image: url("../Pictures/fundo1200.png");
     background-repeat: no-repeat;
-	background-size: cover;
-}
-@media screen and (max-width: 600px) {
-    .navegacao ul {
-    display: none;
-  }
-
-  .navegacao ul {
-    display: block;
-  }
-
-  /* Estilos para o botão de menu */
-  .navegacao ul {
-    display: block;
-    cursor: pointer;
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
-
-  /* Estilos para a lista de navegação quando o botão de menu é clicado */
-  .navegacao ul:checked ~ ul {
-    display: block;
-  }
-
-  .navegacao ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 1rem;
-    margin-top: 0.5rem;
-    text-align: center;
-    flex-direction: column;
-  }
-
-  .navegacao li {
-    margin-right: 0;
-    margin-bottom: 1rem;
-  }
-
-  .navegacao a {
-    display: block;
-    padding: 0.5rem;
-    color: #fff;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-  }
-  #logo{
-    position: relative;
-    left: 0;
-    height: 50px;
-    width: auto;
-    margin-left: 40vw;
-  }
-  .caixa-1{
-    margin-top: 90vw;
-  }
-  .contactos-santa{
-    margin-top: 200vw;
-  }
+    background-size: cover;
 }
 header{
     display:flex;
@@ -85,7 +25,7 @@ header{
 header{
     position: fixed;
     background-color: #aeadaca6;
-    width: 85.4vw;
+    width: 1180px;
     margin-top: 10px;
     border-radius: 5px;
     height: 80px;
@@ -252,7 +192,7 @@ aside{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    height: 105vh;
 }
 form{
     font-family: Arial, Helvetica, sans-serif;
@@ -298,7 +238,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 4vw 0 2rem 0;
+    margin: 5vw 0 6rem 0;
 }
 .socials li{
     margin: 0 30px;
@@ -317,7 +257,7 @@ h1{
     color:rgba(11, 7, 247, 0.856);
 }
 .bottom-footer{
-    margin-left: 29%;
+    margin-left: 25% ;
     font-size: 17px;
     color: #ffd667e1;
 }

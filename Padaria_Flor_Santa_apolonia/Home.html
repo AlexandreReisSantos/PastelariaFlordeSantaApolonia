@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/css.css">
         <link rel="stylesheet" href="Pictures/Fonts">
+        <link rel="stylesheet" href="./tailwind/package-lock.json">
+        <link rel="stylesheet" href="./tailwind/package.json">
+        <link rel="stylesheet" href="./tailwind/tailwind.config.js">
 
         <script src="js/script.js"></script>   
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -15,18 +18,21 @@
 
     </head>
 
-    <body>
+    <body class="">
     
-        <header>
+        <header class="">
 
-            <div id="title">
+            <div class="">
+                <div id="title">
 
-                <img src="Pictures/flor_santaapolonia2.png" id="logo" alt="logo-padaria">
+                    <img src="Pictures/flor_santaapolonia2.png" class="" id="logo" alt="logo-padaria">
 
-             </div>
+                </div>
+            </div>
+             
+            <div class="">
 
-
-            <nav class="navegacao">
+                 <nav class="navegacao">
 
                     <ul>
 
@@ -36,18 +42,21 @@
                         
                     </ul>
 
-            </nav>
-            
+                </nav>
+            </div>
+
+       
         </header>
         
-            <div class="caixa-1">
+        <div class="">
+            <div class="caixa-1" sm:600>
 
                 <h1>Padaria e Pastelaria<br>
                 Flor de Santa Apolonia</h1>
                 
             </div>
-
-        <main>
+        </div>
+        <main class="">
             
             
             <aside>
@@ -123,7 +132,7 @@
             
         </main>
         
-        <footer>
+        <footer class="">
 
             <hr>
 
