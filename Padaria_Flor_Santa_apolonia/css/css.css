@@ -18,17 +18,14 @@ body{
     background-size: cover;
 }
 header{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-header{
-    position: fixed;
+  /* position: fixed;*/
     background-color: #aeadaca6;
     width: 1180px;
     margin-top: 10px;
     border-radius: 5px;
     height: 80px;
+    display:flex;
+    align-items: center;
 }
 #logo{
     width:90px;
@@ -144,7 +141,7 @@ main{
 .navegacao ul{
     list-style-type: none;
     font-size: 23px;
-    padding: 50px;
+    padding-left: 44vw;
     font-family: 'Nunito';
 }
 .navegacao ul ul{
