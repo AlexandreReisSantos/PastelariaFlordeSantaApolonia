@@ -36,3 +36,10 @@ function openModal() {
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
 
+function clickMenu() {
+  if (itens.style.display == 'block') {
+      itens.style.display = 'none'
+  } else {
+    itens.style.display = 'block'
+  }
+}

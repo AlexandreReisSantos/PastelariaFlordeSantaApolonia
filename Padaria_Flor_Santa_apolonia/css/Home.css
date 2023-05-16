@@ -19,7 +19,7 @@ header{
 }
 header{
     background-color: #aeadaca6;
-    height: 0px;
+    height: 0;
 }
 header > #title >.navegacao {
     padding: 10px;
@@ -27,6 +27,15 @@ header > #title >.navegacao {
 }
 #logo{
     display:none;
+}
+#burguer {
+    background-color: rgb(135, 16, 16);
+    width: 67vw;
+    margin-left: -250px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
 }
 .navegacao{
     display: block;
