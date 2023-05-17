@@ -29,6 +29,8 @@ header > #title >.navegacao {
     display:none;
 }
 #burguer {
+    position: relative;
+    display: block;
     background-color: rgb(135, 16, 16);
     width: 67vw;
     margin-left: -250px;
@@ -124,5 +126,10 @@ footer{
 .bottom-footer{
     text-align: center;
     margin-left: 8vw;
-}
+}.hide {/*atenção a partir daqui para mudanças*/
+    display: none;
+  }
+  .show{
+    display: block;
+  }
 }
