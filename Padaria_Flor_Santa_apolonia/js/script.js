@@ -43,3 +43,48 @@ function clickMenu() {
     itens.style.display = 'block'
   }
 }
+
+
+
+const grid = document.querySelector('.grid');
+
+const products = [
+    'broa2',
+    'mistura-padinha2',
+    'pao-avo2',
+    'pao-bico2',
+    'pao-cementes-cesamo2',
+    'pao-centeio2',
+    'pao-cereais2',
+    'pao-girassol2',
+    'pao-integral2',
+    'pao-mistura2',
+    'pao-mistura-bola2',
+    'pao-mistura-grande2',
+    'Coimbra',
+];
+
+const createProductCard = (productName) => {
+    const card = createElement('div', 'card');
+    const productImage = createElement('div', 'product-image');
+    const productNameElement = createElement('div', 'product-name');
+
+    productImage.style.backgroundImage = `url('../Pictures/${productName}.png')`;
+    productNameElement.textContent = productName;
+
+    card.appendChild(productImage);
+    card.appendChild(productNameElement);
+
+    return card;
+};
+
+const loadProducts = () => {
+    products.forEach((productName) => {
+        const card = createProductCard(productName);
+        grid.appendChild(card);
+    });
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    loadProducts();
+});

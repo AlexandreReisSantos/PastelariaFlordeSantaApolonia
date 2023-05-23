@@ -20,7 +20,10 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
-
+/*.opacy{
+    background-color: #fff;   falta testar ainda opacidade
+    opacity: 0.2;
+}*/
 header{
     position: fixed;
     background-color: #aeadaca6;
@@ -112,10 +115,13 @@ main{
     width: 100%;
     margin-left: 40px;
 }
+#santa{
+    margin-left: 11vw;
+}
 .texto{
     white-space: pre;
-    color: #ffd667e1;
-    font-size: 18px;
+    color: #fbc941;
+    font-size: 20px;
     font-family: 'Doses';
     margin-left: 40px;
 }
@@ -123,17 +129,49 @@ main{
     float: left;
     text-decoration: underline;
 }
+#hr{
+    margin-right: -19.2vw;
+}
+i{
+    float: left;
+    margin-left: 4vw;
+}
+.tmm{
+    float: left;
+    padding-left: 20vw;
+}
+.tmm1{
+    margin-top: 15vh;
+    padding-left: 15vw;
+}
 #telefone p{
     color: #ffd667e1;
+    margin-left: 4vw;
+}
+#telefone{
+    margin-left: 0px;
 }
 #mail p{
     color: #ffd667e1;
+    position: absolute;
+    margin-left: 4vw;
+
+}
+#mail{
+    margin-left: -140px;
 }
 #morada p{
     color: #ffd667e1;
+    margin-bottom: 4vw;
+    margin-left: 4vw;
+
 }
 #morada{
     margin-bottom: 350px;
+    margin-left: 10vw;
+}
+iframe{
+    margin-left: -3vw;
 }
 .navegacao{
     opacity: 0.7;
@@ -156,7 +194,6 @@ main{
 
 }
 .navegacao ul li{
-    display: inline;
     position: relative;
     margin-left: 40px;
 }
@@ -242,7 +279,6 @@ form input[type-submit] {
     margin-top: 35px;
 }
 .socials a i{
-    margin-top: 35px;
     font-size: 1.9rem;
     transition: color .4s ease;
 }
@@ -250,12 +286,14 @@ form input[type-submit] {
     color:rgba(11, 7, 247, 0.856);
 }
 .bottom-footer{
-    margin-left: 29% ;
+    margin-left: 31%;
+    padding-bottom: 7vh;
     font-size: 17px;
     color: #ffd667e1;
 }
 .caracteristicas{
-    margin-top: 85vw;
+    margin-top: 80vw;
+    margin-left: 22vw;
 }
 .contactos-santa i{
     font-size: 1.6rem;
@@ -431,4 +469,29 @@ h3{
     padding-top: 26px;
     text-decoration: underline;
     font-family: 'Doses', Times, serif;   
+}
+#burguer{
+    display: none;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.card{
+    aspect-ratio: 3/4;
+    background-color: #333;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Pictures/flor_santaapolonia2.png');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #39813a;
+    border-radius: 5px;
 }
