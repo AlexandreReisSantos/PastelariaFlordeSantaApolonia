@@ -20,14 +20,34 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
-/*.opacy{
-    background-color: #fff;   falta testar ainda opacidade
-    opacity: 0.2;
-}*/
-header{
+.opacy{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 360vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+.opacy-quemsomos{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+.opacy-servico{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 360vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+  header{
     position: fixed;
     background-color: #aeadaca6;
-    width: 1180px;
+    width: 85.7vw;
     margin-top: 10px;
     border-radius: 5px;
     height: 80px;
@@ -134,7 +154,7 @@ main{
 }
 i{
     float: left;
-    margin-left: 4vw;
+    margin-left: 1vw;
 }
 .tmm{
     float: left;
@@ -202,7 +222,6 @@ iframe{
     color: #ffffff;
 }
 .center{
-    top: 50%;
     text-align: center;
     background-color: rgba(0,0,0,0.5);
     padding: 10px;
