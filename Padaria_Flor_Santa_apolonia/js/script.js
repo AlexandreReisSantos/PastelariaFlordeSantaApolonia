@@ -61,7 +61,6 @@ const products = [
     'pao-mistura2',
     'pao-mistura-bola2',
     'pao-mistura-grande2',
-    'Coimbra',
 ];
 
 const createProductCard = (productName) => {
@@ -69,7 +68,7 @@ const createProductCard = (productName) => {
     const productImage = createElement('div', 'product-image');
     const productNameElement = createElement('div', 'product-name');
 
-    productImage.style.backgroundImage = `url('../Pictures/${productName}.png')`;
+    productImage.style.backgroundImage = url'('../Pictures/${productName}.png')';
     productNameElement.textContent = productName;
 
     card.appendChild(productImage);

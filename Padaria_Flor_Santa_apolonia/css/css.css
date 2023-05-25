@@ -7,16 +7,13 @@ body{
     box-sizing: border-box;
     color: #fff;
     font-family: 'mavenpro';
-    margin-top: 0;
     margin-left: 75px;
-    margin-bottom: 30px;
     margin-right: 75px;
     padding-top: 15px;
     padding-right: 30px;
     background-image: url("../Pictures/fundo1200.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     background-position: center;
     background-attachment: fixed;
 }
@@ -24,7 +21,7 @@ body{
   top: 0;
   left: 0;
   width: 100%;
-  height: 360vh;
+  height: -200vw;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
 }
@@ -32,7 +29,7 @@ body{
   top: 0;
   left: 0;
   width: 100%;
-  height: 250vh;
+  height: 2vw;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
 }
@@ -40,19 +37,21 @@ body{
   top: 0;
   left: 0;
   width: 100%;
-  height: 360vh;
+  height: 2vh;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
 }
   header{
     position: fixed;
-    background-color: #aeadaca6;
+    background-color: #aeadac48;
     width: 85.7vw;
     margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
     height: 80px;
     display:flex;
     align-items: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 #logo{
     width:90px;
@@ -118,7 +117,7 @@ h1{
     font-weight: 200;
     color: #63451b;
     display: block;
-    margin-top: 15vw;
+    margin-top: 10vw;
     justify-content: center;
     text-align: center;
     color: #ffd667e1;
@@ -206,12 +205,12 @@ iframe{
     display: none;
     position: absolute;
 }
-.navegacao ul:hover{
+.navegacao a:hover{
      transition: .3s;
+     color: #e0b748;
 }
 .navegacao ul ul li a{
     display:block;
-
 }
 .navegacao ul li{
     position: relative;
@@ -276,8 +275,12 @@ form input[type-submit] {
     
 }
 .caixa-1{
-    font-size: 20px;
+    font-size: 1rem;
     padding-top: 140px;
+}
+.caixa-2{
+    padding-bottom: 10vh;
+    margin: 5px;
 }
 #paragrafo{
     color: white;
@@ -287,7 +290,9 @@ form input[type-submit] {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5vw 0 6rem 0;
+    margin: 3rem 0 4rem 0;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
 }
 .socials li{
     margin: 0 30px;
@@ -295,7 +300,7 @@ form input[type-submit] {
 .socials a{
     text-decoration: none;
     color: #fff;
-    margin-top: 35px;
+    margin-left: 2em;
 }
 .socials a i{
     font-size: 1.9rem;
@@ -305,10 +310,13 @@ form input[type-submit] {
     color:rgba(11, 7, 247, 0.856);
 }
 .bottom-footer{
-    margin-left: 31%;
-    padding-bottom: 7vh;
+    margin-left: 29%;
+    margin-top: 5rem;
     font-size: 17px;
     color: #ffd667e1;
+}
+.footer-somos{
+    
 }
 .caracteristicas{
     margin-top: 80vw;
@@ -508,7 +516,7 @@ h3{
     transform-style: preserve-3d;
     width: 100%;
     height: 100%;
-    background-image: url('../Pictures/flor_santaapolonia2.png');
+    background-image: url('../Pictures/.png');
     background-size: cover;
     background-position: center;
     border: 2px solid #39813a;
