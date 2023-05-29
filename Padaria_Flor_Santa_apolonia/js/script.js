@@ -1,4 +1,25 @@
 
+
+const grid = document.querySelector('.grid');
+const itens = document.querySelector('.itens');
+
+const products = [
+    'broa2',
+    'mistura-padinha2',
+    'pao-avo2',
+    'pao-bico2',
+    'pao-cementes-cesamo2',
+    'pao-centeio2',
+    'pao-cereais2',
+    'pao-girassol2',
+    'pao-integral2',
+    'pao-mistura2',
+    'pao-mistura-bola2',
+    'pao-mistura-grande2',
+];
+
+/*
+
 function openModal() {
     document.getElementById("myModal").style.display = "block";
   }
@@ -36,39 +57,24 @@ function openModal() {
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
 
-function clickMenu() {
-  if (itens.style.display == 'block') {
-      itens.style.display = 'none'
+  */
+
+/*function clickMenu() {
+  if (itens.style.display === 'block') {
+      itens.style.display = 'none';
   } else {
-    itens.style.display = 'block'
+    itens.style.display = 'block';
   }
 }
 
 
-
-const grid = document.querySelector('.grid');
-
-const products = [
-    'broa2',
-    'mistura-padinha2',
-    'pao-avo2',
-    'pao-bico2',
-    'pao-cementes-cesamo2',
-    'pao-centeio2',
-    'pao-cereais2',
-    'pao-girassol2',
-    'pao-integral2',
-    'pao-mistura2',
-    'pao-mistura-bola2',
-    'pao-mistura-grande2',
-];
 
 const createProductCard = (productName) => {
     const card = createElement('div', 'card');
     const productImage = createElement('div', 'product-image');
     const productNameElement = createElement('div', 'product-name');
 
-    productImage.style.backgroundImage = url'('../Pictures/${productName}.png')';
+    productImage.style.backgroundImage = `url('../Pictures/${character}.png')`;
     productNameElement.textContent = productName;
 
     card.appendChild(productImage);
@@ -86,4 +92,35 @@ const loadProducts = () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     loadProducts();
+});
+*/
+
+
+const createElement = (tagName, className) => {
+  const element = document.createElement(tagName);
+  element.className = className;
+  return element;
+};
+
+const createProductCard = (productName) => {
+  const card = createElement('div', 'card');
+  const productImage = createElement('div', 'product-image');
+  const productNameElement = createElement('div', 'product-name');
+
+  productImage.style.backgroundImage = `url('../Pictures/${productName}.png')`;
+  productNameElement.textContent = productName;
+
+  card.appendChild(productImage);
+  card.appendChild(productNameElement);
+
+  return card;
+};
+
+const loadProducts = () => {
+  const productCards = products.map((productName) => createProductCard(productName));
+  productCards.forEach((card) => grid.appendChild(card));
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadProducts();
 });
