@@ -1,25 +1,3 @@
-
-
-const grid = document.querySelector('.grid');
-const itens = document.querySelector('.itens');
-
-const products = [
-    'broa2',
-    'mistura-padinha2',
-    'pao-avo2',
-    'pao-bico2',
-    'pao-cementes-cesamo2',
-    'pao-centeio2',
-    'pao-cereais2',
-    'pao-girassol2',
-    'pao-integral2',
-    'pao-mistura2',
-    'pao-mistura-bola2',
-    'pao-mistura-grande2',
-];
-
-/*
-
 function openModal() {
     document.getElementById("myModal").style.display = "block";
   }
@@ -57,7 +35,6 @@ function openModal() {
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
 
-  */
 
 /*function clickMenu() {
   if (itens.style.display === 'block') {
@@ -95,14 +72,32 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 */
 
+/*
+const grid = document.querySelector('.grid');
+const itens = document.querySelector('.itens');
 
-const createElement = (tagName, className) => {
+const products = [
+    'broa2.png.png',
+    'mistura-padinha2',
+    'pao-avo2',
+    'pao-bico2',
+    'pao-cementes-cesamo2',
+    'pao-centeio2',
+    'pao-cereais2',
+    'pao-girassol2',
+    'pao-integral2',
+    'pao-mistura2',
+    'pao-mistura-bola2',
+    'pao-mistura-grande2',
+];
+
+  const createElement = (tagName, className) => {
   const element = document.createElement(tagName);
   element.className = className;
   return element;
 };
 
-const createProductCard = (productName) => {
+  const createProductCard = (productName) => {
   const card = createElement('div', 'card');
   const productImage = createElement('div', 'product-image');
   const productNameElement = createElement('div', 'product-name');
@@ -116,11 +111,11 @@ const createProductCard = (productName) => {
   return card;
 };
 
-const loadProducts = () => {
+  const loadProducts = () => {
   const productCards = products.map((productName) => createProductCard(productName));
   productCards.forEach((card) => grid.appendChild(card));
 };
 
-document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', () => {
   loadProducts();
-});
+}); codigo da pagina serviços*/ 
