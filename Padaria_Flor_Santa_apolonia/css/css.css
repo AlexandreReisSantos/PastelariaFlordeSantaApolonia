@@ -375,7 +375,7 @@ td{
 }
 h3{
     font-size: 4vw;
-    color: #cfcbc0e1;
+    color: #343637;
     font-family: 'Doses';
     text-align: center;
     padding-top: 30px;
@@ -497,6 +497,21 @@ h3{
 #burguer{
     display: none;
 }
+.rowPastelaria{
+    margin-top: 70vh;
+}
+.opacity2{
+    width: auto;
+    height: 5vw;
+    margin-bottom: 8vh;
+    background-color: #642409d1;
+    z-index: 1;
+}
+
+
+
+
+
 /*.grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
