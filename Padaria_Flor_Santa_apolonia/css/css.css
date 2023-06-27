@@ -507,7 +507,18 @@ h3{
     background-color: #642409d1;
     z-index: 1;
 }
-
+.modal-content{
+    position: relative;
+    margin-left: 22rem;
+    width: 100px;
+    height: auto;
+}
+.modal-content1{
+    height: 1vw;
+    position: absolute;
+    margin-left: 27rem;
+    margin-bottom: 500px;
+}
 
 
 
